@@ -50,16 +50,14 @@ const Bible = () => {
             onChange={(e) => setTweet(e.target.value)}
             placeholder='Paste your tweet here!'
             cols={50}
-            rows={10}
-          />
+            rows={10} />
         </div>
         <div>
           <button onClick={callOpenAIAPI}>Get the Tweet Sentiment from OpenAI API</button>
           {sentiment !== "" ?
             <h3>This Tweet Is: {sentiment}</h3>
             :
-            null
-          }
+            null}
         </div>
       </div>
     )

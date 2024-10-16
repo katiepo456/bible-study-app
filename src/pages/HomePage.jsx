@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './Home';
 import About from './About';
 import Bible from './Bible';
+import BiblePage from './BiblePage';
 import '../styling/NavBar.css';
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/bible">Bible</Link></li>
+              <li><Link to="/biblepage">BiblePage</Link></li>
             </ul>
           </div>
           <div className="navbar-right">
@@ -36,6 +38,7 @@ const HomePage = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/bible" element={<Bible />} />
+          {/*<Route path="/biblepage" element={<BiblePage />} />*/}
           {/* ... other routes */}
         </Routes>
       </div>
