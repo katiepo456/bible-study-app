@@ -38,7 +38,7 @@ const HomePage = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/bible" element={<Bible />} />
-          {/*<Route path="/biblepage" element={<BiblePage />} />*/}
+          <Route path="/biblepage" element={<BiblePage />} />
           {/* ... other routes */}
         </Routes>
       </div>

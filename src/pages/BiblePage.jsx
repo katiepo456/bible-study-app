@@ -1,8 +1,6 @@
 import {
     AppShell,
-    MantineProvider,
-    ColorSchemeProvider,
-    ColorScheme,
+    MantineProvider
   } from "@mantine/core";
   import { useDisclosure, useLocalStorage, useWindowEvent } from "@mantine/hooks";
   import MySideBar from "../components/MySideBar";
@@ -10,12 +8,6 @@ import {
   import Passage from "../components/Passage";
 
 function BiblePage() {
-    const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-        key: "color-scheme",
-        defaultValue: "dark",
-      });
-      const toggleColorScheme = () =>
-        setColorScheme((current) => (current === "dark" ? "light" : "dark"));
       const [opened, setOpened] = useState(false);
       const [modalOpened, modalFn] = useDisclosure(false);
       useWindowEvent("keydown", (event) => {
@@ -30,12 +22,12 @@ function BiblePage() {
       });
     
     return (
-        <ColorSchemeProvider
+       /* <ColorSchemeProvider
       colorScheme={colorScheme}
       toggleColorScheme={toggleColorScheme}
-    >
+    >*/
       <MantineProvider
-        theme={{ colorScheme }}
+        //theme={{ colorScheme }}
         withGlobalStyles
         withNormalizeCSS
       >
@@ -44,10 +36,6 @@ function BiblePage() {
           navbar={<MySideBar opened={opened} setOpened={setOpened} />}
           styles={(theme) => ({
             main: {
-              backgroundColor:
-                theme.colorScheme === "dark"
-                  ? theme.colors.dark[8]
-                  : theme.colors.gray[0],
               height: "100vh",
             },
           })}
@@ -55,7 +43,7 @@ function BiblePage() {
           <Passage open={modalFn.open} />
         </AppShell>
       </MantineProvider>
-    </ColorSchemeProvider>
+    /*</ColorSchemeProvider>*/
   );
         
 }
