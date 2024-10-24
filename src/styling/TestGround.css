@@ -1,15 +1,22 @@
 .container {
     display: flex;
+    
   }
   
   .scripture {
     flex: 1; /* Each column takes up equal space */
     padding: 10px;
+
+    width: 50%;
+    overflow-y: scroll;
+    height: 800px;
   }
 
   .companion {
     flex: 1; /* Each column takes up equal space */
     padding: 10px;
     display: grid;
+    
+    width: 50%;
       
   }
