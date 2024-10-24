@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 
-const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 const Bible = () => {
     const [tweet, setTweet] = useState("");
@@ -9,6 +9,7 @@ const Bible = () => {
   
     async function callOpenAIAPI() {
       console.log("Calling the OpenAI API");
+      console.log(API_KEY);
       
       const APIBody = {
         "model": "gpt-4o-mini",
@@ -48,15 +49,15 @@ const Bible = () => {
         <div>
           <textarea
             onChange={(e) => setTweet(e.target.value)}
-            placeholder='Paste your tweet here!'
+            placeholder='Paste your Bible verses/passages here!'
             cols={50}
             rows={10}
           />
         </div>
         <div>
-          <button onClick={callOpenAIAPI}>Get the Tweet Sentiment from OpenAI API</button>
+          <button onClick={callOpenAIAPI}>Get Bible Study Questions from OpenAI API</button>
           {sentiment !== "" ?
-            <h3>This Tweet Is: {sentiment}</h3>
+            <h3>Here are some questions: {sentiment}</h3>
             :
             null
           }
