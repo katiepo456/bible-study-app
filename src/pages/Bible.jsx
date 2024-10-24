@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 
-const API_KEY = "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";
+const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
 const Bible = () => {
     const [tweet, setTweet] = useState("");

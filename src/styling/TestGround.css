@@ -1,22 +1,27 @@
 .container {
     display: flex;
-    
   }
   
   .scripture {
-    flex: 1; /* Each column takes up equal space */
+    flex: 2;
     padding: 10px;
+    gap: 10px;
 
-    width: 50%;
+    width: 60%;
     overflow-y: scroll;
     height: 800px;
   }
 
   .companion {
-    flex: 1; /* Each column takes up equal space */
+    flex: 1;
     padding: 10px;
-    display: grid;
+    gap: 10px;
     
-    width: 50%;
+    top: 50%;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
       
   }
