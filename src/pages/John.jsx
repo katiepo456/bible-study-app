@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import data from '../assets/john.json';
-import Bible from './Bible';
+import BibleCompanion from './BibleCompanion';
 import '../styling/GospelDisplay.css';
 
 function Gospel_of_John() {
@@ -21,7 +21,7 @@ function Gospel_of_John() {
             ))}
         </div>
         <div className="companion">
-          <Bible />
+          <BibleCompanion />
         </div>
       </div>
     )

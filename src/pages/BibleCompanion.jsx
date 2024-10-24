@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
-const Bible = () => {
+const BibleCompanion = () => {
     const [verse, setVerses] = useState("");
     const [generated_questions, setQuestions] = useState("");
   
@@ -66,4 +66,4 @@ const Bible = () => {
     )
 }
 
-export default Bible
+export default BibleCompanion;

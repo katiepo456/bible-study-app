@@ -7,9 +7,7 @@ import Matthew from './Matthew';
 import Mark from './Mark';
 import Luke from './Luke';
 import John from './John';
-{/*import Bible from './Bible';
-import BiblePage from './BiblePage';
-import TestGround from './TestGround';*/}
+
 import '../styling/NavBar.css';
 
 const HomePage = () => {
@@ -30,9 +28,6 @@ const HomePage = () => {
               <li><Link to="/mark">Mark</Link></li>
               <li><Link to="/luke">Luke</Link></li>
               <li><Link to="/john">John</Link></li>
-              {/*<li><Link to="/bible">Bible</Link></li>
-              <li><Link to="/biblepage">BiblePage</Link></li>
-              <li><Link to="/testground">TestGround</Link></li>*/}
             </ul>
           </div>
           <div className="navbar-right">
@@ -51,9 +46,6 @@ const HomePage = () => {
           <Route path="/mark" element={<Mark />} />
           <Route path="/luke" element={<Luke />} />
           <Route path="/john" element={<John />} />
-          {/*<Route path="/bible" element={<Bible />} />
-          <Route path="/biblepage" element={<BiblePage />} />
-          <Route path="/testground" element={<TestGround />} />*/}
           {/* ... other routes */}
         </Routes>
       </div>
@@ -61,4 +53,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;
