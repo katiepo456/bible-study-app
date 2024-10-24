@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import data from '../assets/john.json';
+import data from '../assets/luke.json';
 import Bible from './Bible';
 import '../styling/GospelDisplay.css';
 
-function Gospel_of_John() {
+function Gospel_of_Luke() {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -13,7 +13,7 @@ function Gospel_of_John() {
     return (
       <div className="container" style={{ paddingTop: '50px' }}>
         <div className="scripture">
-          <h2>The Gospel of John</h2>
+          <h2>The Gospel of Luke</h2>
             {users.map(user => (
             <div key={user.id}>
                 <p>{user.verse} {user.text}</p>
@@ -27,4 +27,4 @@ function Gospel_of_John() {
     )
 }
 
-export default Gospel_of_John;
+export default Gospel_of_Luke;
