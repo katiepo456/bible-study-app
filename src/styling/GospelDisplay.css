@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+  }
+  
+  .scripture {
+    flex: 2;
+    padding: 10px;
+    gap: 10px;
+
+    width: 60%;
+    overflow-y: scroll;
+    height: 800px;
+  }
+
+  .companion {
+    flex: 1;
+    padding: 10px;
+    gap: 10px;
+    
+    top: 50%;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+      
+  }

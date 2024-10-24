@@ -1,29 +1,30 @@
 import React from 'react';
 import { useState } from 'react'
 
-const API_KEY = "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";
+const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
-const Bible = () => {
-    const [tweet, setTweet] = useState("");
-    const [sentiment, setSentiment] = useState(""); // Negative or Positive
+const BibleCompanion = () => {
+    const [verse, setVerses] = useState("");
+    const [generated_questions, setQuestions] = useState("");
   
     async function callOpenAIAPI() {
       console.log("Calling the OpenAI API");
+      console.log(API_KEY);
       
       const APIBody = {
         "model": "gpt-4o-mini",
         "messages": [
           {
             "role": "system",
-            "content": "You will be provided with a tweet, and your task is to classify its sentiment as positive, neutral, or negative."
+            "content": "You will be provided with verses from the Bible, and your task is to generate 1-3 Bible study questions related to the verses."
           },
           {
             "role": "user",
-            "content": "I loved the new Batman movie!"
+            "content": verse
           }
         ],
         "temperature": 0.7,
-        "max_tokens": 64,
+        "max_tokens": 150,
         "top_p": 1
       }
       
@@ -38,25 +39,25 @@ const Bible = () => {
         return data.json();
       }).then((data) => {
         console.log(data);
-        setSentiment(data.choices[0].message.content.trim());
+        setQuestions(data.choices[0].message.content.trim());
       });
     }
   
-    console.log(tweet);
+    console.log(verse);
     return (
       <div className="App">
         <div>
           <textarea
-            onChange={(e) => setTweet(e.target.value)}
-            placeholder='Paste your tweet here!'
+            onChange={(e) => setVerses(e.target.value)}
+            placeholder='Paste your Bible verses/passages here!'
             cols={50}
             rows={10}
           />
         </div>
         <div>
-          <button onClick={callOpenAIAPI}>Get the Tweet Sentiment from OpenAI API</button>
-          {sentiment !== "" ?
-            <h3>This Tweet Is: {sentiment}</h3>
+          <button onClick={callOpenAIAPI}>Get Bible Study Questions from OpenAI API</button>
+          {generated_questions !== "" ?
+            <><h3>Here are some questions: </h3><p>{generated_questions}</p></>
             :
             null
           }
@@ -65,4 +66,4 @@ const Bible = () => {
     )
 }
 
-export default Bible
+export default BibleCompanion;
