@@ -7,6 +7,7 @@ import Matthew from './Matthew';
 import Mark from './Mark';
 import Luke from './Luke';
 import John from './John';
+import Test_John from './TestJohn';
 
 import '../styling/NavBar.css';
 
@@ -28,6 +29,7 @@ const HomePage = () => {
               <li><Link to="/mark">Mark</Link></li>
               <li><Link to="/luke">Luke</Link></li>
               <li><Link to="/john">John</Link></li>
+              <li><Link to="/test_john">Test_John</Link></li>
             </ul>
           </div>
           <div className="navbar-right">
@@ -46,6 +48,7 @@ const HomePage = () => {
           <Route path="/mark" element={<Mark />} />
           <Route path="/luke" element={<Luke />} />
           <Route path="/john" element={<John />} />
+          <Route path="/test_john" element={<Test_John />} />
           {/* ... other routes */}
         </Routes>
       </div>
