@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import data from '../assets/john.json';
-import BibleCompanion from './BibleCompanion';
-import Chapter from './Chapter';
-import Sidebar from './Sidebar';
+import BibleCompanion from '../components/BibleCompanion';
+import Chapter from '../components/Chapter';
+import Sidebar from '../components/Sidebar';
 
 import '../styling/GospelDisplay.css';
 
