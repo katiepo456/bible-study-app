@@ -1,30 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import data from '../assets/luke.json';
 import BibleCompanion from './BibleCompanion';
+import Chapter from './Chapter';
+import Sidebar from './Sidebar';
+
 import '../styling/GospelDisplay.css';
 
 function Gospel_of_Luke() {
-    const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([]);
 
-    useEffect(() => {
-      setUsers(data); 
-    }, []);
-  
-    return (
+  useEffect(() => {
+    setUsers(data); 
+  }, []);
+
+  const chapters = data.map((group) => group.chapter_group[0].chapter);
+  return (
+    <>
       <div className="container" style={{ paddingTop: '50px' }}>
+        <div className="sidebar">
+          <Sidebar chapters={chapters} />
+        </div>
         <div className="scripture">
           <h2>The Gospel of Luke</h2>
-            {users.map(user => (
-            <div key={user.id}>
-                <p>{user.verse} {user.text}</p>
-            </div>
-            ))}
+          {users.map((group, index) => (
+            <Chapter key={index} chapterData={group.chapter_group} />
+          ))}
         </div>
         <div className="companion">
           <BibleCompanion />
         </div>
       </div>
-    )
+    </>
+  );
 }
 
 export default Gospel_of_Luke;
