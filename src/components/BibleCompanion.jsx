@@ -11,7 +11,8 @@ const BibleCompanion = () => {
       console.log("Calling the OpenAI API");
       console.log(API_KEY);
       
-      const APIBody = {
+      const APIBody = {  // make question + answer format to restrict the GPT model to pulling information from the Catena Aurea (it is already trained on the pdf file so you don't have to do that)
+        // check notes in google docs to better this
         "model": "gpt-4o-mini",
         "messages": [
           {
