@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Chapter({chapterData}) {
+function ScriptureText({chapterData}) {
   const {chapter} = chapterData[0];
 
   return(
@@ -17,4 +17,4 @@ function Chapter({chapterData}) {
   );
 }
 
-export default Chapter;
+export default ScriptureText;
