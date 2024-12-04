@@ -19,6 +19,15 @@
     justify-content: center;
     align-items: center;
   }
+
+  .gospel_title {
+    flex: 3;
+    padding: 10px;
+    gap: 10px;
+
+    width: 60%;
+    height: 20px;
+  }
   
   .scripture {
     flex: 3;

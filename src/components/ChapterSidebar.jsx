@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Sidebar({chapters}) {
+function ChapterSidebar({chapters}) {
     return (
       <nav>
         <h3>Chapters</h3>
@@ -8,7 +8,7 @@ function Sidebar({chapters}) {
           {chapters.map((chapter, index) => (
             <li key={index} style={{ marginBottom: '10px' }}>
               <a href={`#Chapter-${chapter}`} style={{ textDecoration: 'none', color: 'blue' }}>
-                Chapter {chapter}
+                {chapter}
               </a>
             </li>
           ))}
@@ -17,4 +17,4 @@ function Sidebar({chapters}) {
     );
   }
 
-  export default Sidebar;
+  export default ChapterSidebar;
