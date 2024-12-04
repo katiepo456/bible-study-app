@@ -8,7 +8,7 @@ function ChapterSidebar({chapters}) {
           {chapters.map((chapter, index) => (
             <li key={index} style={{ marginBottom: '10px' }}>
               <a href={`#Chapter-${chapter}`} style={{ textDecoration: 'none', color: 'blue' }}>
-                Chapter {chapter}
+                {chapter}
               </a>
             </li>
           ))}
