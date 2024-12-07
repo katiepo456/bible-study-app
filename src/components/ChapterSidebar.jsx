@@ -3,10 +3,10 @@ import React from 'react';
 function ChapterSidebar({chapters}) {
     return (
       <nav>
-        <h3>Chapters</h3>
+        <p>CHAPTERS</p>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {chapters.map((chapter, index) => (
-            <li key={index} style={{ marginBottom: '10px' }}>
+            <li key={index} style={{ marginBottom: '1px' }}>
               <a href={`#Chapter-${chapter}`} style={{ textDecoration: 'none', color: 'blue' }}>
                 {chapter}
               </a>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react'
 
+import '../styling/GospelDisplay.css';
+
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 const BibleCompanion = () => {
@@ -63,12 +65,12 @@ const BibleCompanion = () => {
           <textarea
             onChange={(e) => setVerses(e.target.value)}
             placeholder='Paste your Bible verses/passages here!'
-            cols={50}
-            rows={10}
+            cols={40}
+            rows={20}
           />
         </div>
         <div>
-          <button onClick={callOpenAIAPI}>Get Bible Study Questions from OpenAI API</button>
+          <button onClick={callOpenAIAPI}>Generate Questions for this Passage</button>
           {generated_questions !== "" ?
             <><h3>Here are some questions: </h3><p>{generated_questions}</p></>
             :

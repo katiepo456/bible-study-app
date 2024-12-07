@@ -16,17 +16,15 @@ const HomePage = () => {
         <nav className="navbar">
           <div className="navbar-left">
             <a className="logo">
-              GaudiumGPT
+              <img src="src/bible_app_logo.png" alt="logo" width="30" height="25"/>
+              Evangelii Gaudium
             </a>
           </div>
           <div className="navbar-center">
             <ul className="nav-links">
               <li><Link to="/matthew">MATTHEW</Link></li>
-              <li></li><li>-</li><li></li>
               <li><Link to="/mark">MARK</Link></li>
-              <li></li><li>-</li><li></li>
               <li><Link to="/luke">LUKE</Link></li>
-              <li></li><li>-</li><li></li>
               <li><Link to="/john">JOHN</Link></li>
             </ul>
           </div>

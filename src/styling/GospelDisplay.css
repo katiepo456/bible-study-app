@@ -1,54 +1,71 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center the sidebar and companion vertically */
-    height: 100vh; /* Full viewport height to vertically center items */
-    padding: 20px;
-    box-sizing: border-box;
-  }
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center; /* Center the sidebar and companion vertically */
+  padding: .5px;
+  box-sizing: border-box;
+}
 
-  .sidebar {
-    flex: 1;
-    padding: 10px;
-    gap: 10px;
+.sidebar {
+  margin-right: 5%;
+
+  height: 70vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-family: "Courier New", monospace;
+}
+
+.scripture {
+  padding: 5px;
+  gap: 10px;
+  margin-right: 5%;
+
+  width: 100%;
+  height: 800px;
+
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.scripture-title {
+
+}
+
+.scripture-text {
+  height: 90%;
+  position: relative;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+.companion {
+  flex: 2;
+  padding: 10px;
+  gap: 10px;
     
-    top: 50%;
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gospel_title {
-    flex: 3;
-    padding: 10px;
-    gap: 10px;
-
-    width: 60%;
-    height: 20px;
-  }
-  
-  .scripture {
-    flex: 3;
-    padding: 10px;
-    gap: 10px;
-
-    width: 60%;
-    overflow-y: scroll;
-    height: 800px;
-  }
-
-  .companion {
-    flex: 2;
-    padding: 10px;
-    gap: 10px;
+  top: 50%;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
     
-    top: 50%;
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-      
-  }
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.app {
+  flex: 2;
+  padding: 10px;
+  gap: 10px;
+    
+  top: 50%;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

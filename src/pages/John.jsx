@@ -15,22 +15,24 @@ function Gospel_of_John() {
 
   const chapters = data.map((group) => group.chapter_group[0].chapter);
   return (
-    <>
-      <div className="container" style={{ paddingTop: '50px' }}>
+      <div className="container" style={{ paddingTop: '5%' }}>
         <div className="sidebar">
           <ChapterSidebar chapters={chapters} />
         </div>
         <div className="scripture">
-          <h2>The Gospel of John</h2>
-          {users.map((group, index) => (
-            <ScriptureText key={index} chapterData={group.chapter_group} />
-          ))}
+          <div className="scripture-title">
+            <h2>The Gospel of John</h2>
+          </div>
+          <div className="scripture-text">
+            {users.map((group, index) => (
+              <ScriptureText key={index} chapterData={group.chapter_group} />
+            ))}
+          </div>          
         </div>
         <div className="companion">
           <BibleCompanion />
         </div>
       </div>
-    </>
   );
 }
 
