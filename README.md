@@ -1,6 +1,6 @@
 # Study Bible
 
-A [React.js](https://react.dev/) project bootstraooed with [Vite.js](https://vitejs.dev/).
+A [React.js](https://react.dev/) project bootstrapped with [Vite.js](https://vitejs.dev/).
 
 The Study Bible app is paired with an AI companion to generate discussion questions based on verses from the Gospels. The GPT model is trained to pose questions referencing the commentary of Catholic Church Fathers found in St. Thomas Aquinas' [*Catena Aurea*](https://books.google.com/books/about/Catena_Aurea.html?id=jo2UszqxPt4C&printsec=frontcover&source=kp_read_button&hl=en&newbks=1&newbks_redir=1).
 
