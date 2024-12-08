@@ -16,7 +16,7 @@ const HomePage = () => {
         <nav className="navbar">
           <div className="navbar-left">
             <a className="logo">
-              <img src="src/bible_app_logo.png" alt="logo" width="30" height="25"/>
+              <img src="src/bible_app_logo.png" alt="logo" width="30" height="25"/> {/* Image Designed by Freepik */}
               Evangelii Gaudium
             </a>
           </div>
