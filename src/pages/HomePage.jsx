@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import About from './About';
 import Matthew from './Matthew';
 import Mark from './Mark';
 import Luke from './Luke';
@@ -9,6 +8,7 @@ import John from './John';
 
 import '../styling/NavBar.css';
 
+{/* Top navigation bar with links to Gospel pages */}
 const HomePage = () => {
   return (
     <Router>
