@@ -2,25 +2,17 @@
 
 A [React.js](https://react.dev/) project bootstrapped with [Vite.js](https://vitejs.dev/).
 
-This Bible study web application is paired with a generative AI companion to create discussion questions based on verses from the Gospels. The GPT model is structured to pose questions referencing the commentary of Catholic Church Fathers found in St. Thomas Aquinas' [*Catena Aurea*](https://books.google.com/books/about/Catena_Aurea.html?id=jo2UszqxPt4C&printsec=frontcover&source=kp_read_button&hl=en&newbks=1&newbks_redir=1).
-
-Preview the application here: (include link to deployed project (in progress))
+Meaning 'The Joy of the Gospel,' this Bible study web application is paired with a generative AI companion to create discussion questions based on verses from the Gospels. The GPT model is structured to pose questions referencing the commentary of Catholic Church Fathers found in St. Thomas Aquinas' [*Catena Aurea*](https://books.google.com/books/about/Catena_Aurea.html?id=jo2UszqxPt4C&printsec=frontcover&source=kp_read_button&hl=en&newbks=1&newbks_redir=1).
 
 ---
 
-## Introduction
+## Abstract
 
-In the age of advancing technology, artificial intelligence is at the forefront of many conversations. With its ability to generate text, music, and art, expectations are growing around its future capabilities. There exists the growing fear of artificial intelligence surpassing the human mind and the effects that it may have on employment. With technology continuing to shift markets and generate job displacement, a sense of competition has developed between humans and machines.
-
-Individuals have been employing the work of artificial intelligence in new environments to compare its success against the work of the human mind. In considering its increasing number of applications, the societal response has led to theological reflections on what sets humans apart from AI. These conversations surrounding artificial intelligence have led to questions regarding one’s humanity.
-
-Pope Francis, visible head of the Catholic Church and bishop of Rome, has expressed his concerns with the competing nature of artificial intelligence. In facing the risks of the culture becoming rich in technology but poor in humanity, he has called for an engagement with the “wisdom of the heart” (Merlo). Rather than seeing artificial intelligence as a threat of overpowering the human mind, it can instead be approached and viewed as a tool to strengthen and raise up the uniqueness of humanity.
-
-Through a theological methodology, this project considers the implications of artificial intelligence in a complementary rather than competitive relationship with humans. By furthering understanding of the advancements in artificial intelligence and its effects in society, the project seeks to examine its role in reference to humanity.
+The rapid advancements in generative artificial intelligence have sparked theological discussions regarding its role in society and its implications for humanity. This project explores the intersection of AI and theology by proposing a complementary rather than competitive relationship between humans and machines. The study examines AI’s potential in fostering engagement in religious practices, particularly with Scripture through a Bible study web application. The application employs OpenAI’s GPT-4o mini model to generate questions for biblical reflection and comprehension based on provided passages. The findings suggest that while generative AI is not a substitute for community discussion, it can serve as a valuable tool to enhance individual engagement with Scripture. These results highlight the importance of the integration of AI tools as a support mechanism rather than a substitute for human participation in religious practices.
 
 ---
 
-Read the complete paper on Artificial Intelligence & Theology here: (include final paper link (in progress))
+Read the complete paper on Artificial Intelligence & Theology [here](https://docs.google.com/document/d/1IwEfDFy6h8oQX3ANJAtvnm6LW-gFoxEySKVN_H3oYyU/edit?usp=sharing).
 
 ---
 
