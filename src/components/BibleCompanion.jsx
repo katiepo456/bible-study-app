@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 
-import '../styling/GospelDisplay.css';
+import '../styling/GospelCompanionDisplay.css';
 
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
