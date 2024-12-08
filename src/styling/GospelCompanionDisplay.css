@@ -37,6 +37,38 @@
   font-family: "Courier New", monospace;
 }
 
+.study-questions h3 {
+  color: #343f7b;
+  text-shadow: .25px .25px .25px #7a84a0;
+  font-family: "Courier New", monospace;
+
+  font-size: 1rem;
+  text-align: center;
+  width: 125%;
+}
+
+.study-questions hr {
+  border: solid;
+  border-color: #343f7b;
+  background-color: #7a84a0;
+}
+
+.study-questions p {
+  color: #343f7b;
+  text-shadow: .5px .5px .5px #7a84a0;
+  font-family: "Courier New", monospace;
+
+  font-size: 1.1rem;
+  text-align: left;
+
+  position: relative;
+  overflow-y: scroll;
+  padding-right: 20px;
+  scrollbar-color: #c5cdf8e3 #343f7b;
+  width: 125%;
+  height: 400px;
+}
+
 .app button {
   font-size: 2rem;
   font-family: "Courier New", monospace;
