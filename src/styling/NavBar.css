@@ -46,7 +46,7 @@
     padding: 0;  
 }
   
-.navbar-right .nav-links li {
+.navbar-right .nav-links li {  /*CSS Code Credit: https://codepen.io/noahraskin/pen/abENVwL*/
     margin-right: 3rem;
 
     font-size: 1.25rem;
