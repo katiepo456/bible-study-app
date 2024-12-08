@@ -47,6 +47,17 @@
   width: 125%;
 }
 
+.error-message {
+  color: #ac2219;
+  text-shadow: .25px .25px .25px #cabebe;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+  width: 125%;
+}
+
 .study-questions hr {
   border: solid;
   border-color: #343f7b;
