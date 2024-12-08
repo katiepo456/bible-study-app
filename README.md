@@ -1,8 +1,8 @@
-# Study Bible
+# <img src="https://github.com/katiepo456/bible-study-app/blob/main/src/bible_app_logo.png" alt="Bible App Logo" width="30"/>  Evangelii Gaudium
 
 A [React.js](https://react.dev/) project bootstrapped with [Vite.js](https://vitejs.dev/).
 
-The Study Bible app is paired with an AI companion to generate discussion questions based on verses from the Gospels. The GPT model is trained to pose questions referencing the commentary of Catholic Church Fathers found in St. Thomas Aquinas' [*Catena Aurea*](https://books.google.com/books/about/Catena_Aurea.html?id=jo2UszqxPt4C&printsec=frontcover&source=kp_read_button&hl=en&newbks=1&newbks_redir=1).
+This Bible study web application is paired with a generative AI companion to create discussion questions based on verses from the Gospels. The GPT model is structured to pose questions referencing the commentary of Catholic Church Fathers found in St. Thomas Aquinas' [*Catena Aurea*](https://books.google.com/books/about/Catena_Aurea.html?id=jo2UszqxPt4C&printsec=frontcover&source=kp_read_button&hl=en&newbks=1&newbks_redir=1).
 
 Preview the application here: (include link to deployed project (in progress))
 
@@ -26,4 +26,9 @@ Read the complete paper on Artificial Intelligence & Theology here: (include fin
 
 ## Developer
 
-Katie J - Champlain College Senior Capstone Project, Computer Science & Innovation
+Katie J<br/>
+Computer Science & Innovation | Champlain College '25
+
+---
+
+*Logo Image Designed by Freepik*
