@@ -3,45 +3,72 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+
     top: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    
     color: #fff;
     padding: 1rem;
+    border: solid;
+
+    background-color: #8697c4;
+    border-top-color: #8697c4;
+    border-left-color: #8697c4;
+    border-right-color: #8697c4;
+    border-bottom-color: #7a84a0;
 }
   
+.navbar-left img {
+    float: left;
+}
+
 .navbar-left .logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    text-decoration: none;
+    text-shadow: 1px 1px 1px #343f7b;
+    position: relative;
+
+    font-family: "Segoe Script", cursive;
 }
   
 .navbar-center .nav-links {
     list-style-type: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
   
-.navbar-center .nav-links li {
-    margin-right: 1rem;
-}
-  
-.navbar-center .nav-links a {
-    color: #fff;
-    text-decoration: none;
-}
-  
-.navbar-right {
+.navbar-right .nav-links {
+    list-style-type: none;
     display: flex;
-    align-items: center;
+    margin: 0;
+    padding: 0;  
 }
   
-.navbar-right .bible-icon {
+.navbar-right .nav-links li {
+    margin-right: 3rem;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #343f7b; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+}
+li:hover {--_p: 100%}
+  
+.navbar-right .nav-links a {
     color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
-    position: relative;
+    text-shadow: 1px 1px 1px #343f7b;
 }

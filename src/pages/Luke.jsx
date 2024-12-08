@@ -15,22 +15,25 @@ function Gospel_of_Luke() {
 
   const chapters = data.map((group) => group.chapter_group[0].chapter);
   return (
-    <>
-      <div className="container" style={{ paddingTop: '50px' }}>
-        <div className="sidebar">
-          <ChapterSidebar chapters={chapters} />
+    <div className="container" style={{ paddingTop: '3%' }}>
+      <div className="sidebar">
+        <ChapterSidebar chapters={chapters} />
+      </div>
+      <div className="scripture">
+        <div className="scripture-title">
+          <h2>THE GOSPEL ACCORDING TO ST. LUKE</h2>
+          <hr></hr>
         </div>
-        <div className="scripture">
-          <h2>The Gospel of Luke</h2>
+        <div className="scripture-text">
           {users.map((group, index) => (
             <ScriptureText key={index} chapterData={group.chapter_group} />
           ))}
-        </div>
-        <div className="companion">
-          <BibleCompanion />
-        </div>
+        </div>          
       </div>
-    </>
+      <div className="companion">
+        <BibleCompanion />
+      </div>
+    </div>
   );
 }
 

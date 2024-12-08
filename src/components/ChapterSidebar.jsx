@@ -2,12 +2,11 @@ import React from 'react';
 
 function ChapterSidebar({chapters}) {
     return (
-      <nav>
-        <h3>Chapters</h3>
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
+      <nav classname="chapter-sidebar">
+        <ul style={{ listStyleType: 'none'}}>
           {chapters.map((chapter, index) => (
-            <li key={index} style={{ marginBottom: '10px' }}>
-              <a href={`#Chapter-${chapter}`} style={{ textDecoration: 'none', color: 'blue' }}>
+            <li key={index}>
+              <a href={`#Chapter-${chapter}`}>
                 {chapter}
               </a>
             </li>
