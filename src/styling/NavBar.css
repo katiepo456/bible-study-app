@@ -29,7 +29,6 @@
     color: #fff;
     text-shadow: 1px 1px 1px #343f7b;
     position: relative;
-
     font-family: "Segoe Script", cursive;
 }
   
@@ -66,7 +65,10 @@
             background-clip: text,padding-box;
     transition: 0.5s;
 }
-li:hover {--_p: 100%}
+
+li:hover {
+    --_p: 100%
+}
   
 .navbar-right .nav-links a {
     color: #fff;

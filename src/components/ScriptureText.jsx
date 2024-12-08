@@ -1,5 +1,6 @@
 import React from 'react';
 
+{/* Displaying Gospel JSON file with chapter titles/markings */}
 function ScriptureText({chapterData}) {
   const {chapter} = chapterData[0];
 

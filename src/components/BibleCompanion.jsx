@@ -42,6 +42,7 @@ const BibleCompanion = () => {
       setIsLoading(true);
       console.log("Calling the OpenAI API");
       
+      {/* Framing question generation */}
       const APIBody = {
         "model": "gpt-4o-mini",
         "messages": [
@@ -118,6 +119,7 @@ const BibleCompanion = () => {
         />
       </div>
       <div>
+        {/* Button display */}
         <button onClick={callOpenAIAPI} disabled={isLoading}>
           {isLoading ? 'Preparing your Questions!' : 'Generate Questions for this Passage'}
         </button>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+{/* Create side navigation bar to quickly jump to specific chapter in the Gospel */}
 function ChapterSidebar({chapters}) {
     return (
       <nav classname="chapter-sidebar">
