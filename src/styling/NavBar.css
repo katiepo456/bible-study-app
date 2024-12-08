@@ -3,12 +3,20 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+
     top: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    
     color: #fff;
     padding: 1rem;
+    border: solid;
+
+    background-color: #8697c4;
+    border-top-color: #8697c4;
+    border-left-color: #8697c4;
+    border-right-color: #8697c4;
+    border-bottom-color: #7a84a0;
 }
   
 .navbar-left img {
@@ -19,7 +27,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    text-decoration: none;
+    text-shadow: 1px 1px 1px #343f7b;
     position: relative;
 
     font-family: "Segoe Script", cursive;
@@ -47,7 +55,7 @@
     font-family: "Courier New", monospace;
 
     --s: 0.1em;   /* the thickness of the line */
-    --c: #2c4bff; /* the color */
+    --c: #343f7b; /* the color */
     
     color: #0000;
     padding-bottom: var(--s);
@@ -62,5 +70,5 @@ li:hover {--_p: 100%}
   
 .navbar-right .nav-links a {
     color: #fff;
-    text-decoration: none;
+    text-shadow: 1px 1px 1px #343f7b;
 }

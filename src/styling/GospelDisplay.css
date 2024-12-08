@@ -27,8 +27,13 @@
   transition: filter 300ms;
 }
 
-.sidebar:hover {
-  filter: drop-shadow(0 0 2em #ffffff);
+.sidebar a:hover {
+  filter: drop-shadow(0 0 2em #7a84a0);
+  text-shadow: 2px 2px 4px #7a84a0;
+}
+
+.chapter-sidebar a {
+  color: #343f7b;
 }
 
 .scripture {
@@ -40,7 +45,15 @@
   height: 800px;
 }
 
+.scripture hr {
+  border: solid;
+  border-color: #343f7b;
+  background-color: #7a84a0;
+}
+
 .scripture-title {
+  color: #343f7b;
+  text-shadow: .5px .5px .5px #7a84a0;
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
@@ -49,14 +62,21 @@
   position: relative;
   overflow-y: scroll;
   padding-right: 20px;
+  scrollbar-color: #c5cdf8e3 #343f7b;
 
   font-size: 1.2rem;
   font-family: "Courier New", monospace;
+  color: #343f7b;
+}
+
+.verses {
+  color: #343f7b;
+  text-shadow: .5px .5px .5px #7a84a0;
 }
 
 .verses:hover {
-  filter: drop-shadow(0 0 2em #ffffff);
-  text-shadow: 2px 2px 4px #000000;
+  filter: drop-shadow(0 0 2em #7a84a0);
+  text-shadow: 2px 2px 4px #7a84a0;
 }
 
 .companion {
