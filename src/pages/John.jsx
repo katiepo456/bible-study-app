@@ -15,13 +15,14 @@ function Gospel_of_John() {
 
   const chapters = data.map((group) => group.chapter_group[0].chapter);
   return (
-      <div className="container" style={{ paddingTop: '5%' }}>
+      <div className="container" style={{ paddingTop: '3%' }}>
         <div className="sidebar">
           <ChapterSidebar chapters={chapters} />
         </div>
         <div className="scripture">
           <div className="scripture-title">
-            <h2>The Gospel of John</h2>
+            <h2>THE GOSPEL ACCORDING TO ST. JOHN</h2>
+            <hr></hr>
           </div>
           <div className="scripture-text">
             {users.map((group, index) => (

@@ -5,7 +5,6 @@ function ScriptureText({chapterData}) {
 
   return(
     <div id={`Chapter-${chapter}`} style={{ paddingTop: '5px' }}>
-      <hr></hr>
       <h2>{`CHAPTER ${chapter}`}</h2>
         {chapterData.map((verse, index) => (
           <div key={index} style={{marginBottom: '5px'}}>
@@ -14,6 +13,7 @@ function ScriptureText({chapterData}) {
             </p>
           </div>
         ))}
+      <hr></hr>
     </div>
   );
 }

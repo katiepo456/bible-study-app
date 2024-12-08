@@ -66,7 +66,7 @@ const BibleCompanion = () => {
             onChange={(e) => setVerses(e.target.value)}
             placeholder='Paste your Bible verses/passages here!'
             cols={40}
-            rows={20}
+            rows={10}
           />
         </div>
         <div>

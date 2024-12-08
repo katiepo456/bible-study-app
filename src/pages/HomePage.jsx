@@ -21,17 +21,15 @@ const HomePage = () => {
             </a>
           </div>
           <div className="navbar-center">
-            <ul className="nav-links">
+            <ul className="nav-links"/>
+          </div>
+          <div className="navbar-right">
+          <ul className="nav-links">
               <li><Link to="/matthew">MATTHEW</Link></li>
               <li><Link to="/mark">MARK</Link></li>
               <li><Link to="/luke">LUKE</Link></li>
               <li><Link to="/john">JOHN</Link></li>
             </ul>
-          </div>
-          <div className="navbar-right">
-            <a href="/about" className="bible-icon">
-              about
-            </a>
           </div>
         </nav>
     

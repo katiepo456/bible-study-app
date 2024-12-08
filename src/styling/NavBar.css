@@ -32,7 +32,14 @@
     padding: 0;  
 }
   
-.navbar-center .nav-links li {
+.navbar-right .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;  
+}
+  
+.navbar-right .nav-links li {
     margin-right: 3rem;
 
     font-size: 1.25rem;
@@ -53,19 +60,7 @@
 }
 li:hover {--_p: 100%}
   
-.navbar-center .nav-links a {
+.navbar-right .nav-links a {
     color: #fff;
     text-decoration: none;
-}
-  
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-  
-.navbar-right .bible-icon {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
-    position: relative;
 }
