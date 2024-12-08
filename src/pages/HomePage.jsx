@@ -36,6 +36,7 @@ const HomePage = () => {
         {/* A <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
+          <Route path="/" element={<Matthew />} />
           <Route path="/matthew" element={<Matthew />} />
           <Route path="/mark" element={<Mark />} />
           <Route path="/luke" element={<Luke />} />
